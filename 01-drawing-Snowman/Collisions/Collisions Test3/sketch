@@ -1,0 +1,25 @@
+let size = 50;
+let x;
+let y;
+let myFill= 255
+
+function setup(){
+	createCanvas(400, 400);
+  x = width/2;
+  y = height/2;
+}
+
+function draw(){
+	background(100);
+	fill(myFill);
+  ellipse(x, y, size);
+
+  fill(150);
+	ellipse(mouseX, mouseY, size,);
+
+  let distance = dist(x,y, mouseX, mouseY);
+
+  fill(200);
+  textSize(20);
+  text(distance,30,30)
+}
