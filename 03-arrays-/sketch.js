@@ -2,13 +2,13 @@ let rectX =  [0, 150, 250, 300];   // save y coords
 let rectY =  [0, 15, 300,  200] ;   // save y coords
 let speeds = [3, 2, 5.5,  8]   ; 
 let fills =  [5, 88, 200,  250]   ;  
-let speed = 1; 
+let speed = 0.5; 
 
 function setup() {
   createCanvas(400, 400);
   noStroke();
   rectMode(CENTER);
-  for (let i = 1; i < 8; i++) {         //i < 8; = the amount of objects
+  for (let i = 1; i <2; i++) {         //i < 2; = the amount of objects
     rectX[i] = random(0, 400)
     rectY[i] = random(0, 400)
     speeds[i] = random(0.5, 6);
